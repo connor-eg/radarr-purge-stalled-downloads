@@ -6,7 +6,7 @@ This is designed for a Linux machine because I am automating a Linux machine. If
 but I am a colossal fan of automation.
 
 ## Wha?
-I'm glad you asked. Radarr has a mechanism to monitor the state of your download client, and even to know when a download has stalled because of a lack of seeds. It has a mechanism to remove downloads from your download client at the push of a button. However, it has *no* mechaism which combines these two functionalities and purges/blocklists bad downloads automatically. This has been a problem for a while, and I have decided to fix it myself.
+I'm glad you asked. Radarr has a mechanism to monitor the state of your download client, and even to know when a download has stalled because of a lack of seeds. It has a mechanism to remove downloads from your download client at the push of a button. However, it has *no* mechaism which combines these two functionalities and purges/blocklists bad downloads automatically. This has been a problem for a while, and I have decided to fix it myself. Or at least *for* myself.
 
 ## How does it work?
 Magic. And Bash. Some Python too. The idea is easy enough to implement in theory:
