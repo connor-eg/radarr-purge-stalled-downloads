@@ -12,6 +12,7 @@ I'm glad you asked. Radarr has a mechanism to monitor the state of your download
 Magic. And Bash. Some Python too. The idea is easy enough to implement in theory:
 - Query Radarr to figure out what downloads are stalled
 - Tell Radarr to blocklist those stalled downloads
+
 The only problem is that this two-step process requires web interaction and JSON parsing, and that's where my scripts come into play. It uses Python to query Radarr for stalled downloads, then pipes the JSON output to jq to get a list of bad download IDs (which are converted to a Bash-style array), then iterates through that list using Python to tell Radarr to blocklist those downloads.
 
 ## How do I use this?
