@@ -25,13 +25,13 @@ Next, you'll need to place all three files somewhere on your machine, and set up
 
 You will then want to make a crontab entry that runs the Bash script every so often -- I have mine set to every 10 minutes. Bing bang boom, automation.
 
-For n00bz (why yes, I did just transport you to 2005), you'll want to run `crontab -e` and then add this entry into your crontab file: `*/10 * * * * /bin/bash /**YOUR SCRIPT DIRECTORY**/remove_script.sh >/dev/null 2>&1`. That's just telling your computer "every 10 minutes, run the remove script and pump the output into the abyss (because error supression is cool)."
+For n00bz (why yes, I did just transport you to 2005), you'll want to run `crontab -e` and then add this entry into your crontab file: `*/10 * * * * /bin/bash /**YOUR SCRIPT DIRECTORY**/remove_script.sh >/dev/null 2>&1`. That's just telling your computer "every 10 minutes, run the remove script and pump the output into the abyss."
 
-OH, before I forget. The Python scripts will contain your Radarr API key. Don't forget to set file permissions to make it so only you can read/write the file, and so that cron can execute it.
+Oh, before I forget. **The Python scripts will contain your Radarr API key.** Remember to set file permissions to make it so only you can read/write the file, and so that cron can execute it (consider `chmod 711`).
 
 ## Reference material in case you want to expand on this:
 - crontab (for scheduling) [man page](https://www.man7.org/linux/man-pages/man5/crontab.5.html). It's pretty easy to use.
-- jq (for parsing JSON) [documentation](https://jqlang.github.io/jq/). It probably came with your Linux disrtibution?????
+- jq (for parsing JSON) [documentation](https://jqlang.github.io/jq/). It probably came with your Linux distribution?????
 - pyarr (Python library for interacting with *arr software) [documentation](https://pypi.org/project/pyarr/).
 
 ## Do not ask me to expand this to other *arr software. That would make me cry.
