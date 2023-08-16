@@ -25,10 +25,7 @@ Next, you'll need to place all three files somewhere on your machine, and set up
 
 You will then want to make a crontab entry that runs the Bash script every so often -- I have mine set to every 10 minutes. Bing bang boom, automation.
 
-For n00bz (why yes, I did just transport you to 2005), you'll want to run
-`crontab -e`
-and then add this line into that crontab file.
-`*/10 * * * * /bin/bash /**YOUR SCRIPT DIRECTORY**/remove_script.sh >/dev/null 2>&1`
+For n00bz (why yes, I did just transport you to 2005), you'll want to run `crontab -e` and then add this line into your crontab file: `*/10 * * * * /bin/bash /**YOUR SCRIPT DIRECTORY**/remove_script.sh >/dev/null 2>&1`
 
 OH, before I forget. The Python scripts will contain your Radarr API key. Don't forget to set file permissions to make it so only you can read/write the file, and so that cron can execute it.
 
