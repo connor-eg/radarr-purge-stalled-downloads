@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# Uncomment the line below if you're having to set this up in your own virtualenv environment.
+# Uncomment and fix the line below if you're having to set this up in your own virtualenv environment.
 # source /**YOUR VIRTUALENV DIRECTORY**/virtualenv/bin/activate
 
 # You'll just need to point this at the get_queue.py script that sits on your machine.
