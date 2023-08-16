@@ -33,13 +33,14 @@ and then add this line into that crontab file.
 OH, before I forget. The Python scripts will contain your Radarr API key. Don't forget to set file permissions to make it so only you can read/write the file, and so that cron can execute it.
 
 ## Reference material in case you want to expand on this:
-crontab (for scheduling) [man page](https://www.man7.org/linux/man-pages/man5/crontab.5.html). It's pretty easy to use.
-jq (for parsing JSON) [documentation](https://jqlang.github.io/jq/). It probably came with your Linux disrtibution?????
-pyarr (Python library for interacting with *arr software) [documentation](https://pypi.org/project/pyarr/).
+- crontab (for scheduling) [man page](https://www.man7.org/linux/man-pages/man5/crontab.5.html). It's pretty easy to use.
+- jq (for parsing JSON) [documentation](https://jqlang.github.io/jq/). It probably came with your Linux disrtibution?????
+- pyarr (Python library for interacting with *arr software) [documentation](https://pypi.org/project/pyarr/).
 
 # Do not ask me to expand this to other *arr software. That would make me cry.
 Feel free to make PRs if you get that working though. It helps other people who are having the same frustration I once did.
 
 ## Things you probably searched to get here (I am become SEO, the destroyer of frustration.)
 How to automatically remove stalled downloads in Radarr or Sonarr
+
 How to block stalled downloads in Radarr or Sonarr
