@@ -1,12 +1,12 @@
 # radarr-purge-stalled-downloads
 A small set of scripts that allow you to automatically blocklist stalled downloads from Radarr. Can be adapted for other software in the *arr suite (like Sonarr).
-This is designed for a Linux machine because I am automating a Linux machine. If you're running your setup on a Windows machine, this might work within WSL. <sub><sup>or u could rewrite it in powershell if u're into that sort of thing</sup></sub>
+This is designed for Linux. If you're running your setup on a Windows machine, this might work within WSL. <sub><sup>or u could rewrite it in powershell if u're into that sort of thing</sup></sub>
 
 # I do not condone piracy,
 but I am a colossal fan of automation.
 
 ## Wha?
-I'm glad you asked. Radarr has a mechanism to monitor the state of your download client, and it can even know when a download has stalled because of a lack of seeds. It has a mechanism to remove downloads from your download client. However, it has *no* mechanism which combines these two functionalities and purges/blocklists bad downloads automatically. This has been a problem for a while, and I have decided to fix it myself. Or at least *for* myself.
+I'm glad you asked. Radarr has a mechanism to monitor the state of your download client, and it can even know when a download has stalled because of a lack of seeds. It also has a mechanism to remove downloads from your download client. However, it has *no* mechanism which combines these two functionalities and purges/blocklists bad downloads automatically. This has been a problem for a while, and I have decided to fix it myself. Or at least *for* myself.
 
 ## How do I use this?
 To get started, you'll need the pyarr Python library available for your machine.
@@ -35,7 +35,7 @@ The only problem is that this *supposedly* two-step process requires web interac
 - pyarr (Python library for interacting with *arr software) [documentation](https://pypi.org/project/pyarr/).
 
 ## Please do not ask me to expand this to other *arr software. That would make me cry.
-Feel free to make PRs if you get that working though. It helps other people who are having the same frustration I once did.
+Feel free to make PRs if you care enough to get that working though. It helps other people who are having the same frustration I once did.
 
 ## Things you probably searched to get here (I am become SEO, the destroyer of frustration.)
 How to automatically remove stalled downloads in Radarr or Sonarr
